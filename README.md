@@ -68,12 +68,32 @@ In this portion of the lab, we will create our virtual enviornments on Microsoft
 </p>
 <br />
 
+<h3>Configuring Network Security Groups</h3>
 
 <p>
-<img src="https://i.imgur.com/sNimdvJ.png" height="80%" width="80%" alt="Internet Installation Services installation"/>
+1. We are now setting up our firewall for the virtual machines to attract potential threat actors like hackers and bots to try to access it.
 </p>
+
 <p>
-Now that we have this installed, let's download the installation files needed for osTicket and HeidiSQL.
+2. Inside the resource group, edit the network security group in the following manner:
+ </br>
+ -Allow for all traffic on all ports
+ </br>
+ -Set the priority of the rule low to ensure it is the first rule looked at
+ </br>
+ -Name the inbound security rule 
+</p>
+
+<p>
+3. Attempt to ping the VM's IP Address in CMD and verify that it doesn't work due to firewall restrictions.
+</p>
+
+<p>
+4. We will perform the same steps to open all inbound traffic on the linux virtual machine.
+</p>
+
+<p>
+<img src="https://i.imgur.com/jopvgjn.png" height="80%" width="80%" alt="Internet Installation Services installation"/>
 </p>
 <br />
 
