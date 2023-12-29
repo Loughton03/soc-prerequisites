@@ -85,11 +85,7 @@ In this portion of the lab, we will create our virtual enviornments on Microsoft
 </p>
 
 <p>
-3. Attempt to ping the VM's IP Address in CMD and verify that it doesn't work due to firewall restrictions.
-</p>
-
-<p>
-4. We will perform the same steps to open all inbound traffic on the linux virtual machine.
+3. We will perform the same steps to open all inbound traffic on the linux virtual machine.
 </p>
 
 <p>
@@ -98,8 +94,89 @@ In this portion of the lab, we will create our virtual enviornments on Microsoft
 <br />
 
 <p>
-<img src="https://i.imgur.com/n9NDKgB.png" height="80%" width="80%" alt="Internet Installation Services installation"/>
+4. We will now open the windows VM and ping the windows IP address from inside the vm.
+ 
+5. We will attempt to ping the VM's IP Address in CMD and verify that it doesn't work due to firewall restrictions.
 </p>
+
+<p>
+
+</p>
+
+<p>
+<img src="https://i.imgur.com/3xCGZbx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+6. As the above screenshot shows we are not able to find the network due to firewall restrictions.
+</p>
+
+<p>
+7. To remedy, we will turn off Windows Firewall on the VM using "Windows Defender Firewall Advanced Security.
+  - go in to windows defender firewall properties.
+  - turn off the firewall state under domain profile, private profile,        and the public profile.
+</p>
+
+<p>
+<img src="https://i.imgur.com/XHY5Toh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+8. Ping is now able to reach our network.
+</p>
+
+<p>
+<img src="https://i.imgur.com/ar874dL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Installing MS SQL Server (Evaluation) on the windows VM</h3>
+
+<p>
+1. We are now setting up our firewall for the virtual machines to attract potential threat actors like hackers and bots to try to access it.
+</p>
+
+<p>
+Install SQL Server Evaluation
+
+Download here
+
+Install .exe file, click Download Media, ISO option, Open Folder, and Mount Media
+
+It will show as a disk file under the "This PC" side panel:
+</p>
+
+<p>
+<img src="https://i.imgur.com/IeZsqjy.png" height="80%" width="80%" alt="Internet Installation Services installation"/>
+</p>
+
+<p>
+Install SQL Server Management Studio (SSMS) in "Mixed Mode" to allow logins with online and local accounts.
+
+<p>
+<img src="https://i.imgur.com/sd4Ul3q.png" height="80%" width="80%" alt="Internet Installation Services installation"/>
+</p>
+
+<p>
+11. Add the current user to SSMS and set a password. The default username will be: sa
+</p>
+
+<p>
+<img src="https://i.imgur.com/JhjWbRX.png" height="80%" width="80%" alt="Internet Installation Services installation"/>
+</p>
+
+<h2>Download and install Server Management Studio</h2>
+<p>This app allows us log into SQL Server and visualize logs </p>
+
+<p>
+We will begin with downloading Server Management Studio 
+</p>
+
+<p>
+<img src="https://i.imgur.com/kvxrU1r.png" height="80%" width="80%" alt="Internet Installation Services installation"/>
+</p>
+
+<p>Next we will endable auditiing for the SQL server </p>
+
+
 <p>
 Now head to the installation folders.
 
